@@ -64,7 +64,7 @@ After install the above requeriments, open your VSCode and clone this repository
 
 Add to user.json the account you created using preconditions steps
 
-Execute npm install
+Execute npm install -i for dependencies
 
 Run it
 
