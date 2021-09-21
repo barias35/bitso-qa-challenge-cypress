@@ -7,6 +7,7 @@ const login = new LoginPage();
 describe("Scenario 1", () => { 
 
   beforeEach('navigate to login page', () => {
+    //I was getting an unusual redirect, even thought I log out after finish each scenario
     login.logOut()
     login.navigate();
   });

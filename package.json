@@ -1,0 +1,23 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "Dependencies for this project",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^8.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barias35/bitso-qa-challenge-cypress.git"
+  },
+  "author": "Bresly Arias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barias35/bitso-qa-challenge-cypress/issues"
+  },
+  "homepage": "https://github.com/barias35/bitso-qa-challenge-cypress#readme"
+}
