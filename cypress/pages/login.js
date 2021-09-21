@@ -14,7 +14,7 @@ export class LoginPage{
     }
 
     validateTheLoginPage(){
-        cy.get('button[type="submit"]', { timeout: 10000 }).should('have.text', 'Log in')
+        cy.get('button[type="submit"]', { timeout: 15000 }).should('have.text', 'Log in')
         return this
     }
 

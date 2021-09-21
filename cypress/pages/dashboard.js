@@ -2,6 +2,9 @@
 export class DashboardPage{
 
     validateTheDashboardPage(){
+
+        cy.wait(2000);
+
         cy
         .contains('h1', 'Wallet', { timeout: 10000 })
         .should('be.visible')

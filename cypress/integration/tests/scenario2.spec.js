@@ -9,14 +9,21 @@ describe("Scenario 2", () => {
   });
 
   it('Verify the error message for incorrect pin is displayed', () => {
+
+    login.validateTheLoginPage();
+    let dashboardPage;
     
-    var dashboardPage = login
-    .validateTheLoginPage()
-    .login('ing.bresly@gmail.com', 'Qa123test@')
+    cy
+    .fixture('user')
+    .then(data =>{
+ 
+     dashboardPage = login.login(data.email, data.password)
+     dashboardPage.validateTheDashboardPage();
+    })
+ 
 
-    dashboardPage.validateTheDashboardPage()
-
-    var beneficiaryPage = new BeneficiaryPage().navigate()
+   var beneficiaryPage = new BeneficiaryPage().navigate()
+   beneficiaryPage.ValidateTheBeneficiaryPage()
 
     cy
     .fixture('beneficiary')

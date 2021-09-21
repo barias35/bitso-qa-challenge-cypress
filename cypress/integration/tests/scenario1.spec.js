@@ -1,5 +1,6 @@
 /// <reference types="Cypress" />
 
+import { DashboardPage } from "../../pages/dashboard";
 import {LoginPage} from "../../pages/login";
 const login = new LoginPage();
 
@@ -11,12 +12,17 @@ describe("Scenario 1", () => {
 
   it('Verify the error message is displayed', () => {
 
-   login.validateTheLoginPage()
+   login.validateTheLoginPage();
+   let dashboardPage;
+   cy
+   .fixture('user')
+   .then(data =>{
 
-   var dashboardPage = login.login('ing.bresly@gmail.com', 'Qa123test@')
-   dashboardPage.validateTheDashboardPage();
+    dashboardPage = login.login(data.email, data.password)
+    dashboardPage.validateTheDashboardPage();
+   })
 
-    cy
+   cy
     .fixture('cryptos')
     .then(data =>{
       data.tokens.forEach(t=>{
