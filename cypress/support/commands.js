@@ -10,13 +10,7 @@
 //
 //
 // -- This is a parent command --
- Cypress.Commands.add('login', (email, password) => { 
-    cy.get('#client_id').type(email)
-    cy.get('#password').type(password)
-    cy.get('button[type="submit"]').click()
-    cy.contains('h1', 'Wallet', { timeout: 10000 }).should('be.visible')
-    cy.log('Login successfully!')
-  })
+ //Cypress.Commands.add('login', (email, password) => {})
 //
 //
 // -- This is a child command --
