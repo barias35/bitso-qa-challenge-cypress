@@ -33,6 +33,8 @@ describe("Scenario 1", () => {
       })
     })
 
+    login.logOut();
+
   })
 
 });

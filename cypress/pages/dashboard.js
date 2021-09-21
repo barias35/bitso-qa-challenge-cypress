@@ -6,7 +6,7 @@ export class DashboardPage{
         cy.wait(2000);
 
         cy
-        .contains('h1', 'Wallet', { timeout: 10000 })
+        .contains('h1', 'Wallet', { timeout: 15000 })
         .should('be.visible')
 
         cy

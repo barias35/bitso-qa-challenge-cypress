@@ -75,7 +75,7 @@ export class BeneficiaryPage{
 
     ValidateTheBeneficiaryPage(){
         cy
-        .contains('h2', 'Add Beneficiary')
+        .contains('h2', 'Add beneficiary', { timeout: 15000 })
         .should('be.visible')
         return this;
     }

@@ -18,5 +18,8 @@ export class LoginPage{
         return this
     }
 
+    logOut(){
+        cy.visit('https://devmalta.bitso.com/logout')
+    }
     
 }

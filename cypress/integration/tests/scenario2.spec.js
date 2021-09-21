@@ -12,7 +12,7 @@ describe("Scenario 2", () => {
 
     login.validateTheLoginPage();
     let dashboardPage;
-    
+
     cy
     .fixture('user')
     .then(data =>{
@@ -43,6 +43,12 @@ describe("Scenario 2", () => {
     .clickAddBeneficiary()
     .typeConfirmationPin()
     .clickConfirmButtonModal()
+
+
+    login.logOut();
+    
     })
+
+
   })
 
