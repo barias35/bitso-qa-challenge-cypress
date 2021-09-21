@@ -7,6 +7,7 @@ const login = new LoginPage();
 describe("Scenario 1", () => { 
 
   beforeEach('navigate to login page', () => {
+    login.logOut()
     login.navigate();
   });
 
