@@ -1,0 +1,11 @@
+{
+    "firstName": "QA",
+    "lastName": "Senior",
+    "secondLastName": "Challenger",
+
+    "birthDate":{
+        "day": 1,
+        "month": "January",
+        "year": 2000
+    }
+}
