@@ -62,10 +62,16 @@ If you don't have NodeJS please download [here](https://nodejs.org/en/download/)
 
 After install the above requeriments, open your VSCode and clone this repository
 
+Add to user.json the account you created using preconditions steps
+
+Execute npm install
 
 Run it
 
 Enjoy it!
+
+![image](https://user-images.githubusercontent.com/47786738/134224403-bc5d0c60-ee9a-4cf1-ad3b-74de41028717.png)
+
 
 
 
